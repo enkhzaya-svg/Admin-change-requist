@@ -37,7 +37,7 @@
                             <label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 tracking-wider">Байгууллагын Домэйн</label>
                             <div class="relative">
                                 <i data-lucide="globe" class="absolute left-3 top-2.5 text-slate-400 w-4 h-4"></i>
-                                <input id="domainInput" type="text" value="rentpay.mn" placeholder="example.mn" 
+                                <input id="domainInput" type="text" value="" placeholder="Байгууллагын домэйн нэр" 
                                     class="w-full pl-10 pr-3 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm bg-slate-50">
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                             <label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 tracking-wider">Борлуулагчийн нэр</label>
                             <div class="relative">
                                 <i data-lucide="building-2" class="absolute left-3 top-2.5 text-slate-400 w-4 h-4"></i>
-                                <input id="resellerInput" type="text" value="TUS Solution" placeholder="Борлуулагч компани"
+                                <input id="resellerInput" type="text" value="TUS Solution" placeholder="Борлуулагч компанийн нэр"
                                     class="w-full pl-10 pr-3 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm bg-slate-50">
                             </div>
                         </div>
@@ -55,29 +55,26 @@
                             <label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 tracking-wider">Лицензийн тоо</label>
                             <div class="relative">
                                 <i data-lucide="users" class="absolute left-3 top-2.5 text-slate-400 w-4 h-4"></i>
-                                <input id="licensesInput" type="number" value="30" placeholder="30"
+                                <input id="licensesInput" type="number" value="" placeholder="Лицензийн тоо оруулах"
                                     class="w-full pl-10 pr-3 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm bg-slate-50">
                             </div>
                         </div>
 
-                        <div class="pt-2">
+                        <div class="pt-2 border-t mt-4">
                             <label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 tracking-wider">Таны нэр (Админ)</label>
-                            <input id="adminNameInput" type="text" placeholder="Нэрээ оруулна уу"
+                            <input id="adminNameInput" type="text" placeholder="Админы нэр"
                                 class="w-full px-3 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm bg-slate-50">
                         </div>
 
                         <div>
                             <label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 tracking-wider">Холбоо барих</label>
-                            <input id="contactInput" type="text" placeholder="Утас эсвэл Имэйл"
+                            <input id="contactInput" type="text" placeholder="Имэйл эсвэл Утас"
                                 class="w-full px-3 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm bg-slate-50">
                         </div>
                     </div>
 
-                    <div class="mt-8 pt-6 border-t border-slate-100">
-                        <div class="flex items-start text-xs text-slate-500 bg-slate-50 p-4 rounded-xl">
-                            <i data-lucide="info" class="text-blue-500 mr-2 flex-shrink-0 w-4 h-4"></i>
-                            <p>Энд оруулсан мэдээлэл баруун талын хүсэлтийн текстэнд шууд боловсруулагдах болно.</p>
-                        </div>
+                    <div class="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-500 bg-slate-50 p-4 rounded-xl">
+                        <p>Дээрх мэдээллийг бөглөхөд доорх албан бичвэр автоматаар бэлэн болно.</p>
                     </div>
                 </div>
             </div>
@@ -85,124 +82,101 @@
             <!-- Main Content Area -->
             <div class="lg:col-span-2 space-y-8">
                 
-                <!-- Visual Steps Section -->
+                <!-- Expanded Steps Section -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-black text-slate-800 mb-8 flex items-center">
                         <span class="bg-blue-600 text-white p-2 rounded-lg mr-3 shadow-lg shadow-blue-100">
-                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            <i data-lucide="list-checks" class="w-5 h-5"></i>
                         </span>
-                        Хүсэлт илгээх дараалал
+                        Илгээх дэлгэрэнгүй заавар
                     </h2>
 
-                    <div class="relative space-y-12">
-                        <!-- Vertical Line -->
-                        <div class="absolute left-6 top-2 bottom-2 w-0.5 bg-slate-100 hidden sm:block"></div>
-
+                    <div class="space-y-8 relative">
                         <!-- Step 1 -->
-                        <div class="relative flex flex-col sm:flex-row items-start">
-                            <div class="z-10 flex-shrink-0 w-12 h-12 bg-white border-2 border-blue-500 rounded-full flex items-center justify-center text-blue-600 font-bold shadow-sm mb-4 sm:mb-0">
-                                <i data-lucide="log-in" class="w-5 h-5"></i>
-                            </div>
-                            <div class="sm:ml-6 pt-1">
-                                <h3 class="font-bold text-slate-900 text-lg mb-1">Портал руу нэвтрэх</h3>
-                                <p class="text-slate-600 text-sm mb-2">Google Cloud Support Portal-д Админ эрхээрээ нэвтэрнэ үү.</p>
+                        <div class="flex items-start group">
+                            <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center font-bold text-blue-600 mr-5 flex-shrink-0 border border-blue-100 transition-colors group-hover:bg-blue-600 group-hover:text-white">1</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Портал руу нэвтрэх</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed mb-3">Google Workspace-ийн <b>Super Admin</b> эрх бүхий хаягаар доорх линкээр нэвтэрнэ үү.</p>
                                 <a href="https://support.cloud.google.com/portal/create-case" target="_blank" 
-                                    class="inline-flex items-center text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-full hover:bg-blue-100 transition-colors">
-                                    support.cloud.google.com <i data-lucide="external-link" class="ml-1 w-3 h-3"></i>
+                                    class="inline-flex items-center text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-lg hover:bg-blue-100 border border-blue-100">
+                                    support.cloud.google.com <i data-lucide="external-link" class="ml-2 w-3 h-3"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Step 2 -->
-                        <div class="relative flex flex-col sm:flex-row items-start">
-                            <div class="z-10 flex-shrink-0 w-12 h-12 bg-white border-2 border-indigo-500 rounded-full flex items-center justify-center text-indigo-600 font-bold shadow-sm mb-4 sm:mb-0">
-                                <i data-lucide="plus-circle" class="w-5 h-5"></i>
-                            </div>
-                            <div class="sm:ml-6 pt-1">
-                                <h3 class="font-bold text-slate-900 text-lg mb-1">Шинэ кейс нээх</h3>
-                                <p class="text-slate-600 text-sm">
-                                    <span class="font-semibold text-slate-800 uppercase text-xs border px-1.5 py-0.5 rounded bg-slate-50">Create Case</span> товчийг дарж, төрлийг нь 
-                                    <span class="ml-1 font-semibold text-slate-800 text-xs bg-indigo-50 px-1.5 py-0.5 rounded">Billing & Subscription</span> гэж сонгоно.
-                                </p>
+                        <div class="flex items-start group">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center font-bold text-indigo-600 mr-5 flex-shrink-0 border border-indigo-100 transition-colors group-hover:bg-indigo-600 group-hover:text-white">2</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Шинэ хүсэлт үүсгэх</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">Портал руу орсны дараа баруун дээд хэсэгт байрлах <span class="px-2 py-0.5 bg-slate-100 rounded font-bold text-slate-800 text-xs">CREATE CASE</span> товчийг дарна.</p>
                             </div>
                         </div>
 
                         <!-- Step 3 -->
-                        <div class="relative flex flex-col sm:flex-row items-start">
-                            <div class="z-10 flex-shrink-0 w-12 h-12 bg-white border-2 border-amber-500 rounded-full flex items-center justify-center text-amber-600 font-bold shadow-sm mb-4 sm:mb-0">
-                                <i data-lucide="file-edit" class="w-5 h-5"></i>
-                            </div>
-                            <div class="sm:ml-6 pt-1">
-                                <h3 class="font-bold text-slate-900 text-lg mb-1">Хүсэлт бөглөх</h3>
-                                <p class="text-slate-600 text-sm">Доор бэлэн болсон текстийг хуулж аваад "Description" хэсэгт тавина.</p>
+                        <div class="flex items-start group">
+                            <div class="w-10 h-10 rounded-xl bg-violet-50 flex items-center justify-center font-bold text-violet-600 mr-5 flex-shrink-0 border border-violet-100 transition-colors group-hover:bg-violet-600 group-hover:text-white">3</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Төрөл сонгох</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Кейсийн төрөл (Case Category) хэсэгт <span class="text-violet-700 font-bold italic">"Billing & Subscription"</span> гэж сонгоно уу. Энэ нь төлбөр тооцооны асуудал хариуцсан мэргэжилтэнтэй холбогдох боломж олгоно.
+                                </p>
                             </div>
                         </div>
 
                         <!-- Step 4 -->
-                        <div class="relative flex flex-col sm:flex-row items-start">
-                            <div class="z-10 flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-xl shadow-blue-200 mb-4 sm:mb-0">
-                                <i data-lucide="send" class="w-5 h-5"></i>
+                        <div class="flex items-start group">
+                            <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center font-bold text-amber-600 mr-5 flex-shrink-0 border border-amber-100 transition-colors group-hover:bg-amber-600 group-hover:text-white">4</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Текст хуулж тавих</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Доор байрлах <b>"Хүсэлтийн текст"</b> хэсгээс <span class="text-amber-700 font-bold">Хуулах</span> товчийг дарж аваад, порталын <b>Description</b> хэсэгт "Paste" хийж тавина уу. 
+                                    <span class="block mt-1 text-xs text-slate-400 italic">*Subject хэсэгт текстийн эхний мөрийг бичихэд тохиромжтой.</span>
+                                </p>
                             </div>
-                            <div class="sm:ml-6 pt-1">
-                                <h3 class="font-bold text-slate-900 text-lg mb-1">Илгээх</h3>
-                                <p class="text-slate-600 text-sm">Мэдээллээ дахин нэг шалгаад "Submit" товчийг дарж илгээнэ.</p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="flex items-start group">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center font-bold text-emerald-600 mr-5 flex-shrink-0 border border-emerald-100 transition-colors group-hover:bg-emerald-600 group-hover:text-white">5</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Илгээх ба Хүлээх</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    <span class="font-bold text-slate-800">SUBMIT</span> дарж илгээнэ. Google-ийн баг ихэвчлэн 24 цагийн дотор хариу өгөх бөгөөд таны бүртгэлтэй имэйл хаягаар мэдэгдэл ирэх болно.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Letter Preview Container -->
-                <div class="bg-white shadow-2xl rounded-3xl border border-slate-200 overflow-hidden ring-1 ring-slate-100">
+                <div class="bg-white shadow-2xl rounded-3xl border border-slate-200 overflow-hidden">
                     <div class="px-8 py-6 bg-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4">
                         <div class="flex items-center">
                             <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
                                 <i data-lucide="mail" class="text-blue-400 w-5 h-5"></i>
                             </div>
-                            <div>
-                                <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Хүсэлтийн загвар</span>
-                                <h3 class="text-white font-bold">Copy & Paste Ready</h3>
-                            </div>
+                            <h3 class="text-white font-bold">Хүсэлтийн текст</h3>
                         </div>
-                        <button id="copyBtn" class="w-full sm:w-auto flex items-center justify-center px-6 py-3 rounded-2xl text-sm font-black transition-all transform active:scale-95 bg-white text-slate-900 hover:bg-blue-50 shadow-xl shadow-black/20">
+                        <button id="copyBtn" class="w-full sm:w-auto flex items-center justify-center px-6 py-3 rounded-2xl text-sm font-black transition-all bg-white text-slate-900 hover:bg-blue-50 shadow-xl shadow-black/20">
                             <i data-lucide="copy" class="mr-2 w-4.5 h-4.5"></i>
                             Текстийг хуулах
                         </button>
                     </div>
+                    
                     <div class="p-8 bg-slate-50">
-                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-inner font-serif text-slate-800 leading-relaxed min-h-[450px]">
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-inner font-serif text-slate-800 leading-relaxed min-h-[350px]">
                             <pre id="letterPreview" class="whitespace-pre-wrap text-sm sm:text-base selection:bg-blue-100"></pre>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Warning/Pro-tip Section -->
-                <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 p-6 rounded-3xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-2 opacity-10">
-                        <i data-lucide="shield-check" class="w-24 h-24"></i>
-                    </div>
-                    <div class="flex relative z-10">
-                        <div class="bg-amber-400 p-2 rounded-xl h-fit mr-4 shadow-lg shadow-amber-200 text-white">
-                            <i data-lucide="shield-check" class="w-6 h-6"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-black text-amber-900 uppercase text-xs tracking-wider mb-1">Чухал: Transfer Token бэлдэх</h4>
-                            <p class="text-sm text-amber-800 leading-relaxed max-w-lg">
-                                Google танаас "Transfer Token" нэхвэл <a href="https://admin.google.com/TransferToken" target="_blank" class="font-bold underline decoration-amber-400 decoration-2 underline-offset-2">энд дарж</a> нэвтрээд <b>"C01234567"</b> (Google Public Identifier) кодыг ашиглан токен үүсгээрэй.
-                            </p>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-
-        <footer class="mt-12 text-center text-slate-400 text-xs">
-            <p>© 2024 Google Workspace Transfer Assistant. All rights reserved.</p>
-        </footer>
     </div>
 
     <script>
-        // DOM Elements
         const inputs = {
             domain: document.getElementById('domainInput'),
             reseller: document.getElementById('resellerInput'),
@@ -213,55 +187,40 @@
         const preview = document.getElementById('letterPreview');
         const copyBtn = document.getElementById('copyBtn');
 
-        // Initial Render
         function updateLetter() {
-            const domain = inputs.domain.value || '[Domain]';
-            const reseller = inputs.reseller.value || '[Reseller Name]';
-            const licenses = inputs.licenses.value || 'XX';
-            const adminName = inputs.adminName.value || '[Your Name]';
-            const contact = inputs.contact.value || '[Your Phone/Email]';
+            const domain = inputs.domain.value || '[Домэйн нэр]';
+            const reseller = inputs.reseller.value || '[Борлуулагчийн нэр]';
+            const licenses = inputs.licenses.value || '[Тоо]';
+            const adminName = inputs.adminName.value || '[Админы нэр]';
+            const contact = inputs.contact.value || '[Имэйл/Утас]';
 
-            const letter = `Subject: Request to Transfer Google Workspace Subscription to Direct Billing - ${domain}
-
-Dear Google Support Team,
-
+            const letter = `Dear Google Support Team,
 I am writing to you as the authorized administrator for the domain ${domain}.
-
 We would like to transition our Google Workspace subscription (currently ${licenses} licenses) from our reseller, ${reseller}, to Google Direct Billing. We wish to manage our billing and subscription directly with Google moving forward.
-
-Our reseller informed us that they encountered a technical error while attempting to initiate this transfer from their console. To avoid any service interruption, we are reaching out to you directly to facilitate this move.
-
-Please provide the necessary assistance to complete this transfer to direct billing for our account. If you require a transfer token or any additional verification from our side, please let us know immediately.
-
-Thank you for your prompt assistance.
+Our reseller informed us that they encountered an error while attempting to initiate this transfer from their console. Please provide the necessary assistance to complete this transfer to direct billing for our account.
+If you require any additional verification or a transfer token, please let us know.
+Thank you for your assistance.
 
 Best regards,
-
 ${adminName}
-Admin, ${domain}
-Contact: ${contact}`;
+${contact}`;
 
             preview.textContent = letter;
         }
 
-        // Copy Functionality
         function handleCopy() {
-            const textToCopy = preview.textContent;
-            
-            // Create temporary textarea for copying
             const el = document.createElement('textarea');
-            el.value = textToCopy;
+            el.value = preview.textContent;
             document.body.appendChild(el);
             el.select();
             document.execCommand('copy');
             document.body.removeChild(el);
 
-            // UI Feedback
             const originalContent = copyBtn.innerHTML;
             copyBtn.classList.remove('bg-white', 'text-slate-900');
             copyBtn.classList.add('bg-green-500', 'text-white');
-            copyBtn.innerHTML = '<i data-lucide="check" class="mr-2 w-4.5 h-4.5"></i> Амжилттай хууллаа';
-            lucide.createIcons(); // Re-render icons for new content
+            copyBtn.innerHTML = '<i data-lucide="check" class="mr-2 w-4.5 h-4.5"></i> Хууллаа';
+            lucide.createIcons();
 
             setTimeout(() => {
                 copyBtn.classList.remove('bg-green-500', 'text-white');
@@ -271,13 +230,11 @@ Contact: ${contact}`;
             }, 2000);
         }
 
-        // Listeners
         Object.values(inputs).forEach(input => {
             input.addEventListener('input', updateLetter);
         });
         copyBtn.addEventListener('click', handleCopy);
 
-        // Initialize
         lucide.createIcons();
         updateLetter();
     </script>
